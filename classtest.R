@@ -144,24 +144,6 @@ write.csv(london_crime, file = "london-crime-modified.csv", row.names = FALSE)
 
 
 
-#q1
-# Read the dataset into a data frame called london_crime
-london_crime <- read.csv("london_crime_dataset.csv")  # Replace "london_crime_dataset.csv" with the actual file name and path
-
-# Show the structure of the dataset
-str(london_crime)
-
-# Amalgamate the day, month, and year variables into a new variable called Date
-london_crime$Date <- paste(london_crime$Day, london_crime$Month, london_crime$Year, sep = "-")
-
-# Optionally, you can convert the Date variable to the Date format
-london_crime$Date <- as.Date(london_crime$Date, format = "%d-%B-%Y")
-
-
-
-
-
-
 
 
 
